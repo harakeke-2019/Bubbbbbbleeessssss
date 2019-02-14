@@ -3,12 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "express": "^4.16.4",
+    "knex": "^0.16.3",
+    "nodemon": "^1.18.10",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
-    "react-scripts": "2.1.5"
+    "react-router": "^4.3.1",
+    "react-scripts": "2.1.5",
+    "sqlite3": "^4.0.6"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "server": "react-scripts start",
+    "client": "nodemon server/server",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
