@@ -1,5 +1,6 @@
-import React from 'react';
+import React from 'react'
 import request from 'superagent'
+import {Link} from 'react-router-dom'
 
 class Profile extends React.Component {
   state = {
@@ -17,10 +18,15 @@ class Profile extends React.Component {
       })
     })
   }
+  getMusic() {
+  }
+
 render () {
   return (
     <div>
     <p>Hello {this.state.firstName} {this.state.lastName}</p>
+    <p>Would you like to hear our favourite sounds</p>
+    <Link to= '/profile/music'><button>Yes</button></Link>
     </div>
   ) 
 }}

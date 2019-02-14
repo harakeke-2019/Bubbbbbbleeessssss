@@ -2,8 +2,8 @@ import React from 'react'
 import { Button, Checkbox, Form } from 'semantic-ui-react'
 // import Link
 
-function HomePage () {
-
+class HomePage extends React.Component {
+  render(){
 return (
   <div>
   <h3>Please enter your name</h3>
@@ -21,9 +21,8 @@ return (
     </Form.Field>
     <Button type='submit'>Submit</Button>
   </Form>
-
   </div>
-)
+)}
 }
 
 export default HomePage
