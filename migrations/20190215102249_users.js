@@ -4,9 +4,6 @@ exports.up = function(knex, Promise) {
       table.string('first')
       table.string('last')
     }) 
-    
   };
-  
   exports.down = function(knex, Promise) {
-    
   };
