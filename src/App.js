@@ -14,7 +14,7 @@ render() {
     
     <Route exact path = '/' component = {HomePage} />
     <Route path = '/profile' component = {Profile}/>
-    <Route path = '/profile/music' component = {Music}/>
+    <Route path = '/music' component = {Music}/>
     {/* <Route path = '/rating' component = {Rating} />  */}
     </div>
   )
