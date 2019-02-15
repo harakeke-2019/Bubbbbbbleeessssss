@@ -18,6 +18,7 @@ render() {
     <Route path = '/music' component = {Music}/>
     <Route path = '/loading' component = {Loading}/>
     {/* <Route path = '/rating' component = {Rating} />  */}
+
     </div>
   )
 }

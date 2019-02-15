@@ -24,19 +24,6 @@ class Loading extends React.Component {
     });
   }
 
-  // setRedirect = () => {
-  //   this.setState({
-  //     redirect: true
-  //   })
-  // }
-
-  // renderRedirect = () => {
-  //   if (this.state.redirect) {
-  //     return <Redirect to='/' />
-  //   }
-  // }
-
-
   componentWillUnmount () {
     this.audio.pause();
   }
