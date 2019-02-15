@@ -3,6 +3,8 @@ import sound from './sounds/bensound-buddy.mp3'
 import sound2 from './sounds/bensound-dubstep.mp3'
 import sound3 from './sounds/bensound-betterdays.mp3'
 
+import { Button } from 'semantic-ui-react'
+
 class Music extends React.Component {
   constructor(props) {
     super(props);
@@ -38,9 +40,16 @@ componentWillUnmount () {
 render() {
     return (
         <div>
-            <button
-                  onClick={this.togglePlay}> Play
-                </button>
+                <Button 
+                onClick={this.togglePlay}
+                positive style={{
+                left: '50%',
+                fontSize: '20px',
+                heigth:"30px", 
+                width:"200px"
+                }}>
+                  PLAY
+                </Button>
             
         </div>
     );

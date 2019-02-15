@@ -1,7 +1,7 @@
 import React from 'react'
 import request from 'superagent'
 import {Link} from 'react-router-dom'
-import { Card, Icon, Image } from 'semantic-ui-react'
+import { Card, Icon, Image, Button } from 'semantic-ui-react'
 
 
 import Music from './Music'
@@ -30,9 +30,12 @@ render () {
   console.log(image)
   return (
     <div>
-    <p>Would you like to hear our favourite sounds</p>
-    <Link to='/music'><button>Yes</button></Link>
-    <div style={{display: "block", marginLeft: "auto", marginRight: "auto", width: '40%'}}>
+    <div style={{display: "block", 
+                marginLeft: "auto", 
+                marginRight: "auto", 
+                width: '25%',
+                }}>
+    <h1 style={{paddingBottom: '50%%'}}>Welcome {firstName}!!</h1>
       <Card>
       <Image src={image} style={{height: '300px'}} />
       <Card.Content>
@@ -47,6 +50,15 @@ render () {
       </Card.Content>
     </Card>
   </div>
+  <div>
+  <p style={{marginLeft: "38%", paddingTop:"100px"}}>Would you like to hear our favourite sounds???</p>
+    {/* <Link to='/music'><button>Yes</button></Link> */}
+    <Link to='/music'>
+    <Button positive style={{marginLeft: "40%", heigth:"30px", width:"200px"}}>
+    TAKE ME THERE</Button>
+    </Link>
+  </div>
+  
 
     </div>
   ) 
