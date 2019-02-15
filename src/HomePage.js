@@ -1,8 +1,10 @@
 import React from 'react'
 import { Button, Checkbox, Form } from 'semantic-ui-react'
-// import Link
+import {Link} from 'react-router-dom'
 
 class HomePage extends React.Component {
+
+  
   render(){
 return (
   <div>
@@ -18,9 +20,10 @@ return (
       <input placeholder='Last Name' />
     </Form.Field>
     <Form.Field>
-      <Checkbox label='I agree to the Terms and Conditions' />
+      <Checkbox label='I agree to the Terms and Conditions'
+      />
     </Form.Field>
-    <Button type='submit' href='#/profile'>Submit</Button>
+    <Link to="/profile"><Button type='submit'>Submit</Button></Link>
   </Form>
   </div>
 )}
