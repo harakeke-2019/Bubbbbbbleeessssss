@@ -1,4 +1,5 @@
 import React from 'react'
+import { Redirect, Link } from 'react-router-dom'
 import sound from './sounds/time-travel.mp3'
 
 class Loading extends React.Component {
@@ -6,6 +7,7 @@ class Loading extends React.Component {
     super(props);
       this.state = {
         'play': false
+        // 'redirect': false
       };
 
       this.url = sound
@@ -17,15 +19,27 @@ class Loading extends React.Component {
         this.audio.play()
       } else {
         this.audio.pause();
+        this.setRedirect();
       }
     });
   }
+
+  // setRedirect = () => {
+  //   this.setState({
+  //     redirect: true
+  //   })
+  // }
+
+  // renderRedirect = () => {
+  //   if (this.state.redirect) {
+  //     return <Redirect to='/' />
+  //   }
+  // }
+
+
   componentWillUnmount () {
     this.audio.pause();
   }
-
-
-
 
   render () {
 
@@ -41,10 +55,21 @@ class Loading extends React.Component {
         <div class="label">To infinity and beyond</div>
         </div>
         </div>
-        <button onClick={this.togglePlay} class="big ui right labeled icon button">
+
+        {!this.state.play 
+          ? <button onClick={this.togglePlay} class="big ui right labeled icon button">
+          <i class="left arrow icon"></i>
+          Go back in time
+          </button>
+          : 
+          <Link to='/'><button onClick={this.togglePlay} class="big ui right labeled icon button">
         <i class="left arrow icon"></i>
         Go back in time
-        </button>
+        </button></Link>
+        
+        }
+
+        
       </div>
     )
   }
