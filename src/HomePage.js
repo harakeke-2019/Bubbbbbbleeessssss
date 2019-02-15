@@ -6,7 +6,8 @@ class HomePage extends React.Component {
   render(){
 return (
   <div>
-  <h3>Please enter your name</h3>
+  <h1>Welcome to our API search engine</h1>
+  <h3>Please enter your name to begin</h3>
   <Form>
     <Form.Field>
       <label>First Name</label>
@@ -19,7 +20,7 @@ return (
     <Form.Field>
       <Checkbox label='I agree to the Terms and Conditions' />
     </Form.Field>
-    <Button type='submit'>Submit</Button>
+    <Button type='submit' href='#/profile'>Submit</Button>
   </Form>
   </div>
 )}

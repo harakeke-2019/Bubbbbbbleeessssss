@@ -35,31 +35,20 @@ render () {
                 marginRight: "auto", 
                 width: '25%',
                 }}>
-    <h1 style={{paddingBottom: '50%%'}}>Welcome {firstName}!!</h1>
+    <h1>Welcome {firstName} {lastName}!!</h1>
       <Card>
       <Image src={image} style={{height: '300px'}} />
-      <Card.Content>
-        <Card.Header>{firstName}{' '}{lastName}</Card.Header>
-        <Card.Description>{firstName} is a comedian living in Nashville.</Card.Description>
-      </Card.Content>
-      <Card.Content extra>
-        <a>
-          <Icon name='user' />
-          {Math.floor(Math.random() * 160) + 20} Friends
-        </a>
-      </Card.Content>
     </Card>
-  </div>
+  <h3>Search for API's</h3>
+  <input placeholder='search' />
+<Button href='#/loading'>Search</Button>
   <div>
-  <p style={{marginLeft: "38%", paddingTop:"100px"}}>Would you like to hear our favourite sounds???</p>
-    {/* <Link to='/music'><button>Yes</button></Link> */}
+  <p>Would you like to hear our developers favourite sounds???</p>
     <Link to='/music'>
-    <Button positive style={{marginLeft: "40%", heigth:"30px", width:"200px"}}>
-    TAKE ME THERE</Button>
+    <Button>Play</Button>
     </Link>
   </div>
-  
-
+  </div>
     </div>
   ) 
 }}
