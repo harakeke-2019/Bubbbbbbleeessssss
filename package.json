@@ -6,6 +6,7 @@
     "@google-cloud/text-to-speech": "^0.5.0",
     "express": "^4.16.4",
     "knex": "^0.16.3",
+    "mdbreact": "^4.10.0",
     "nodemon": "^1.18.10",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
